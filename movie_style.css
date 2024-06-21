@@ -1,0 +1,213 @@
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+    .main {
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+    .movie-detail {
+      margin: 20px 0;
+    }
+    .card-title {
+      font-size: 1.2rem;
+    }
+    .card-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .rating {
+      display: flex;
+      align-items: center;
+    }
+    .rating ion-icon {
+      color: gold;
+      margin-right: 5px;
+    }
+    .footer {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+    }
+    .footer-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+    }
+    .footer-link {
+      margin-right: 20px;
+      color: white;
+      text-decoration: none;
+    }
+    .social-list {
+      display: flex;
+      margin-top: 10px;
+    }
+    .social-link {
+      margin-right: 10px;
+      color: white;
+      text-decoration: none;
+    }
+
+    /* Reset and global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Colors */
+  --rich-black-fogra-29: hsl(225, 25%, 9%);
+  --rich-black-fogra-39: hsl(170, 21%, 5%);
+  --raisin-black: hsl(228, 13%, 15%);
+  --eerie-black: hsl(207, 19%, 11%);
+  --light-gray: hsl(0, 3%, 80%);
+  --gunmetal-1: hsl(229, 15%, 21%);
+  --gunmetal-2: hsl(216, 22%, 18%);
+  --gainsboro: hsl(0, 7%, 88%);
+  --citrine: hsl(57, 97%, 45%);
+  --xiketic: hsl(253, 21%, 13%);
+  --gray-x: hsl(0, 0%, 74%);
+  --white: hsl(0, 100%, 100%);
+  --black: hsl(0, 0%, 0%);
+  --jet: hsl(0, 0%, 20%);
+  
+  /* Typography */
+  --ff-poppins: 'Poppins', sans-serif;
+  --fs-1: 36px;
+  --fs-2: 32px;
+  --fs-3: 30px;
+  --fs-4: 24px;
+  --fs-5: 20px;
+  --fs-6: 18px;
+  --fs-7: 16px;
+  --fs-8: 15px;
+  --fs-9: 14px;
+  --fs-10: 13px;
+  --fs-11: 12px;
+  --fs-12: 11px;
+  --fw-500: 500;
+  --fw-700: 700;
+  
+  /* Transition */
+  --transition-1: 0.15s ease;
+  --transition-2: 0.25s ease-in;
+  
+  /* Spacing */
+  --section-padding: 100px;
+}
+
+body {
+  font-family: var(--ff-poppins);
+  background-color: var(--raisin-black);
+  color: var(--gainsboro);
+  line-height: 1.6;
+  font-size: var(--fs-7);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: var(--fw-700);
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: var(--fs-7);
+  margin-bottom: 20px;
+}
+
+.section-subtitle {
+  font-size: var(--fs-8);
+  color: var(--light-gray);
+  margin-bottom: 10px;
+}
+
+.section-title {
+  font-size: var(--fs-2);
+  color: var(--white);
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: var(--citrine);
+  color: var(--black);
+  font-size: var(--fs-7);
+  font-weight: var(--fw-700);
+  padding: 12px 24px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color var(--transition-1);
+}
+
+.btn:hover {
+  background-color: var(--gray-x);
+}
+
+/* Example usage with variables */
+.hero {
+  padding: var(--section-padding) 0;
+  background-color: var(--rich-black-fogra-39);
+}
+
+.service {
+  padding: var(--section-padding) 0;
+  background-color: var(--gunmetal-1);
+}
+
+.top-rated {
+  padding: var(--section-padding) 0;
+  background-color: var(--rich-black-fogra-39);
+}
+
+.footer {
+  padding: 50px 0;
+  background-color: var(--rich-black-fogra-39);
+}
+
+.footer-brand-wrapper {
+  text-align: center;
+}
+
+.footer-brand-wrapper img {
+  max-width: 100px;
+}
+
+.footer-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.footer-link {
+  margin: 0 10px;
+  color: var(--gainsboro);
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: var(--light-gray);
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.social-link {
+  margin: 0 10px;
+  color: var(--gainsboro);
+  text-decoration: none;
+}
+
+.social-link:hover {
+  color: var(--light-gray);
+}
